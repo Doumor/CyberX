@@ -573,7 +573,7 @@ img {
 }
 
 /*Course advantages card animations*/
-.advantages__list .advantages__item{
+* {
   -o-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -737,22 +737,18 @@ img {
 }
 
 /*Course price card animations*/
-.our-groups__list .our-groups__item{
-  -o-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+.our-groups__list .our-groups__item .our-groups__article-header:hover {
+  -o-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  transform: translateX(10px);
 }
 
-.our-groups__list .our-groups__item--green:hover{
-  -o-transform: skew(-10deg, 10deg);
-  -ms-transform: skew(-10deg, 10deg);
-  -moz-transform: skew(-10deg, 105deg);
-  -webkit-transform: skew(-10deg, 10deg);
-  transform: skew(-10deg, 10deg);
-}
-
-.our-groups__list .our-groups__item--yellow:hover{
+.our-groups__list .our-groups__item p:hover,
+.our-groups__list .our-groups__item--yellow .button:hover,
+.our-groups__list .our-groups__item--yellow img:hover,
+.our-groups__list .our-groups__item--pink img:hover {
   -o-transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
   -moz-transform: scale(1.2, 1.2);
@@ -760,12 +756,21 @@ img {
   transform: scale(1.2, 1.2);
 }
 
-.our-groups__list .our-groups__item--pink:hover{
-  -o-transform: translateY(10px) scale(1.25, 1.25);
-  -ms-transform: translateY(10px) scale(1.25, 1.25);
-  -moz-transform: translateY(10px) scale(1.25, 1.25);
-  -webkit-transform: translateY(10px) scale(1.25, 1.25);
-  transform: translateY(10px) scale(1.25, 1..25);
+.our-groups__list .our-groups__item--green img:hover,
+.our-groups__list .our-groups__item--green .button:hover {
+  -o-transform: skew(-10deg, 10deg);
+  -ms-transform: skew(-10deg, 10deg);
+  -moz-transform: skew(-10deg, 10deg);
+  -webkit-transform: skew(-10deg, 10deg);
+  transform: skew(-10deg, 10deg);
+}
+
+.our-groups__list .our-groups__item--pink .button:hover {
+  -o-transform: translateY(10px) scale(1.4, 1.4);
+  -ms-transform: translateY(10px) scale(1.4, 1.4);
+  -moz-transform: translateY(10px) scale(1.4, 1.4);
+  -webkit-transform: translateY(10px) scale(1.4, 1.4);
+  transform: translateY(10px) scale(1.4, 1.4);
 }
 
 .teachers {
